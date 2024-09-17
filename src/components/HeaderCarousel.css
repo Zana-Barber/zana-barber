@@ -1,0 +1,22 @@
+/* HeaderCarousel.css */
+
+.header-carousel .carousel-image {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Añadido para efecto parallax */
+}
+
+.header-carousel .carousel-caption {
+    bottom: 30%;
+}
+
+.header-carousel h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.header-carousel p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px #000;
+}

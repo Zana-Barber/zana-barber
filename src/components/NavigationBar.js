@@ -3,7 +3,7 @@ import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import './NavigationBar.css';
 
-function NavigationBar() {
+function NavigationBar({ handleShowReserva }) {
     return (
         <Navbar expand="lg" sticky="top" className="navbar">
             <Container>

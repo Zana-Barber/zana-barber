@@ -1,6 +1,6 @@
 // Testimonials.js
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Carousel, Card } from 'react-bootstrap';
 import './Testimonials.css';
 
 function Testimonials() {
@@ -25,18 +25,10 @@ function Testimonials() {
                 <h2 className="text-center mb-5 section-title" data-aos="fade-up">
                     Testimonios
                 </h2>
-                <Row>
+                <Carousel variant="dark">
                     {testimonials.map((testimonial, index) => (
-                        <Col
-                            md={4}
-                            sm={6}
-                            xs={12}
-                            className="mb-4"
-                            key={index}
-                            data-aos="fade-up"
-                            data-aos-delay={`${index * 100}`}
-                        >
-                            <Card className="h-100 testimonial-card">
+                        <Carousel.Item key={index}>
+                            <Card className="testimonial-card mx-auto">
                                 <Card.Body>
                                     <Card.Text>"{testimonial.text}"</Card.Text>
                                 </Card.Body>
@@ -44,9 +36,9 @@ function Testimonials() {
                                     <small className="text-muted">- {testimonial.name}</small>
                                 </Card.Footer>
                             </Card>
-                        </Col>
+                        </Carousel.Item>
                     ))}
-                </Row>
+                </Carousel>
             </Container>
         </section>
     );

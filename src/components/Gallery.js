@@ -32,9 +32,9 @@ function Gallery() {
                             <Image
                                 src={src}
                                 alt={`Galería ${index + 1}`}
-                                thumbnail
-                                fluid
                                 className="gallery-image"
+                                loading="lazy"
+                                fluid
                             />
                         </Col>
                     ))}
@@ -45,3 +45,4 @@ function Gallery() {
 }
 
 export default Gallery;
+

@@ -1,0 +1,71 @@
+/* ReservaModal.css */
+
+/* Estilos generales para el modal */
+.modal-content {
+    background-color: #FFF8E1; /* Beige Claro */
+    border-radius: 8px;
+}
+
+.modal-header,
+.modal-footer {
+    border: none;
+    background-color: #F57C00; /* Naranja Zanahoria */
+    color: #FFF8E1;
+}
+
+.modal-title {
+    font-weight: 600;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.close {
+    color: #FFF8E1;
+    opacity: 1;
+}
+
+.close:hover {
+    color: #E0E0E0;
+}
+
+.btn-primary {
+    background-color: #388E3C; /* Verde Hoja */
+    border-color: #388E3C;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2E7D32;
+    color: #fff;
+}
+
+/* Estilos para los campos del formulario */
+.form-control {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.form-control:focus {
+    border-color: #F57C00; /* Naranja Zanahoria */
+    box-shadow: none;
+}
+
+.form-label {
+    margin-top: 1rem;
+    font-weight: 500;
+    color: #5D4037; /* Marrón Oscuro */
+}
+
+/* Ajustes de espaciado */
+.mt-3 {
+    margin-top: 1rem !important;
+}
+
+/* Responsividad */
+@media (max-width: 576px) {
+    .modal-body {
+        padding: 1rem;
+    }
+}

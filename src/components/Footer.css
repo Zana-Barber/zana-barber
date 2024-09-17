@@ -1,0 +1,15 @@
+/* Footer.css */
+
+.footer {
+    background-color: #5D4037; /* Marrón Oscuro */
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+    color: #F57C00; /* Naranja Zanahoria */
+}
