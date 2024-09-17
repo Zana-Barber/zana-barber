@@ -1,0 +1,17 @@
+/* Gallery.css */
+
+/* Estilos para la sección de galería */
+
+#galeria {
+    background-color: #E0E0E0; /* Gris Claro */
+    padding: 50px 0;
+}
+
+.gallery-image {
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}

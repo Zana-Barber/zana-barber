@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+/* App.css */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFF8E1; /* Beige Claro */
+  color: #5D4037; /* Marrón Oscuro */
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  position: relative;
+  color: #FFF8E1;
+  text-shadow: 1px 1px 2px #000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(245, 124, 0, 0.7); /* Naranja con transparencia */
+  z-index: 0;
+}
+
+.header .header-content {
+  position: relative;
+  z-index: 1;
+}
+
+.section-title {
+  color: #F57C00; /* Naranja Zanahoria */
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  background-color: #388E3C; /* Verde Hoja */
+  border-color: #388E3C;
+}
+
+.btn-primary:hover {
+  background-color: #2E7D32;
+  border-color: #2E7D32;
+}
+
+.navbar {
+  background-color: #5D4037; /* Marrón Oscuro */
+}
+
+.navbar-brand, .nav-link {
+  color: #FFF8E1 !important; /* Beige Claro */
+}
+
+.nav-link:hover {
+  color: #E0E0E0 !important; /* Gris Claro */
+}
+
+footer {
+  background-color: #5D4037; /* Marrón Oscuro */
+  color: #FFF8E1; /* Beige Claro */
+}
+
+.card {
+  border: none;
+}
+
+.card-body {
+  background-color: #FFF8E1;
+}
+
+.list-group-item {
+  background-color: #FFF8E1;
+}
+
+.gallery-image {
+  border-radius: 8px;
+}
+
+.testimonial-card {
+  background-color: #FFF8E1;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+  .header-content h1 {
+    font-size: 2.5rem;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .header-content p {
+    font-size: 1.2rem;
   }
 }
